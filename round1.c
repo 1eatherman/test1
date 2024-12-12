@@ -285,10 +285,13 @@ void go_r_xmas(){
     }
 
 }
-
 void x_mas(){
     go_l_xmas();
     go_r_xmas();
+    pick_beeper();
+    while(front_is_clear()){
+        step();
+    }
 }
 
 //end
